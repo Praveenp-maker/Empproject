@@ -1,0 +1,31 @@
+<h4>List Of Employees</h4>
+<table style="width:500px">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Native</th>
+      <th>Experience</th>
+      <th>Role</th>
+      <th>Active</th>
+      <th>Actions</th>
+     
+    </tr>
+    <tr>
+        <tr *ngFor= "let employee of employees">
+           <td>{{employee.empId}}</td>
+           <td>{{employee.name}}</td>
+           <td>{{employee.role}}</td>
+           <td>{{employee.age}}</td>
+           <td>{{employee.experience}}</td>
+           <td>{{employee.enative}}</td>
+           <td>{{employee.active}}</td>
+           <td><button (click)="update(employee.empId)">update</button>
+            <button (click) = "deleteEmployee(employee.empId)"> Delete</button>
+            <button (click) = "viewEmployee(employee.empId)"> View</button>
+          </td>
+           <!-- [{"empId":1,"name":"mohan","role":"hiber","age":23,"experience":2,"enative":"cbe"}] -->
+       
+    </tr>
+    
+  </table>

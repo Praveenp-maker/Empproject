@@ -1,0 +1,27 @@
+<h4>Update Employees</h4>
+
+<form (ngSubmit)="update()">
+    <label for="empid">Id :</label><br>
+    <input type="text" id="empid" name="id" disabled
+    [(ngModel)]= "employee.empId"> <br>
+
+    <label for="name">Name :</label><br>
+    <input type="text" id="name" name="name"   [(ngModel)]= "employee.name"><br>
+
+    <label for="age">Age :</label><br>
+    <input type="text" id="age" name="age"   [(ngModel)]= "employee.age"><br>
+
+    <label for="fname">Native :</label><br>
+    <input type="text" id="enative" name="native"   [(ngModel)]= "employee.enative"><br>
+
+    <label for="experience">Experience :</label><br>
+    <input type="text" id="experience" name="experience"   [(ngModel)]= "employee.experience"><br>
+
+    <label for="role">Role :</label><br>
+    <input type="text" id="role" name="role"   [(ngModel)]= "employee.role"><br>
+
+    <label for="role">Active</label><br>
+    <input type="radio" id="radio"[(ngModel)]="employee.active"><br>
+
+    <button type="submit">Submit</button>
+  </form>

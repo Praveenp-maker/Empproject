@@ -1,0 +1,9 @@
+.grid {
+    display: grid;
+    transition: 300ms;
+    grid-template-columns: var(--left, 48px) auto;
+  }
+  
+  .grid:has(.left:hover) {
+    --left: 30%;
+  }
